@@ -1,0 +1,14 @@
+name: Starter evaluation
+version: "1.0"
+description: A tiny offline suite to verify agent wiring and exact-match evaluation.
+tasks:
+  - id: capital-france
+    input: What is the capital of France? Reply with only the city.
+    expected_output: Paris
+    checks: [exact_match, not_empty]
+    tags: [geography, smoke-test]
+  - id: arithmetic
+    input: What is 6 multiplied by 7? Reply with only the number.
+    expected_output: "42"
+    checks: [exact_match, not_empty]
+    tags: [math, smoke-test]

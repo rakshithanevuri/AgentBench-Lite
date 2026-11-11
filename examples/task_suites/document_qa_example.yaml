@@ -1,0 +1,25 @@
+name: Document QA example
+version: "1.0"
+description: A small offline benchmark showing suite-managed source material and evidence-aware evaluation.
+required_capabilities:
+  - document_input
+resources:
+  - id: employee-policy
+    name: employee-policy.txt
+    mime_type: text/plain
+    content: |
+      Annual leave policy: Full-time employees receive 20 days of annual leave per calendar year.
+      Unused leave may be carried forward up to 5 days.
+tasks:
+  - id: annual-leave
+    input: How many days of annual leave do full-time employees receive?
+    expected_output: 20 days
+    checks: [contains, not_empty, has_sources]
+    check_weights:
+      contains: 3
+      not_empty: 1
+      has_sources: 1
+    resource_ids: [employee-policy]
+    tags: [document-qa, policy]
+    metadata:
+      expected_evidence: "Full-time employees receive 20 days of annual leave per calendar year."
