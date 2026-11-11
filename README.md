@@ -240,6 +240,23 @@ AI/ML & Data Science Enthusiast
 - GitHub: https://github.com/rakshithanevuri
 - LinkedIn: https://www.linkedin.com/in/rakshithanevuri/
 
+## Screenshots
+
+### Dashboard
+![Dashboard](screenshots/dashboard.png)
+
+### Agent Management
+![Agents](screenshots/agents.png)
+
+### Task Suites
+![Task Suites](screenshots/task-suites.png)
+
+### Evaluation
+![Evaluation](screenshots/evaluation.png)
+
+### Results
+![Results](screenshots/results.png)
+
 ---
 
 *AgentBench Lite is an independent project focused on making AI agent evaluation more structured, transparent, and accessible.*
